@@ -1,3 +1,5 @@
+package linkedlist;
+
 public class LinkedList {
     Node head;
     int size;
@@ -16,6 +18,17 @@ public class LinkedList {
             current.next = node;
         }
 
+    }
+
+    public void prepend(int data){
+        Node node= new Node();
+        node.data=data;
+        if(head==null){
+            head=node;
+        }else{
+            node.next=head;
+            head=node;
+        }
     }
 
 
@@ -63,4 +76,5 @@ public class LinkedList {
        }
 
     }
+
 }

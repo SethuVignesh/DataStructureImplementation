@@ -1,3 +1,7 @@
+package linkedlist;
+
+import linkedlist.LinkedList;
+
 public class TestClass {
 
     public static void main(String[] args) {
